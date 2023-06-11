@@ -1,0 +1,63 @@
+url: https://test-backend.educ.ar/login
+
+test:
+#start login
+  - input_text:
+     selector:
+      selector: xpath
+      value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[1]
+     action_type:
+      attr: send_keys
+      value: maparedes@educar.gob.ar
+  
+  - input_text:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[2]
+      action_type:
+        attr: send_keys
+        value: Maxiparedes87.
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[4]/input
+
+#listado de noticias y creacion  
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/header/nav/div/div[2]/ul[1]/li[1]/a
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/header/nav/div/div[2]/ul[1]/li[1]/ul/li[4]/a
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/section[1]/a
+
+  - start_switch_to_window:
+      selector:
+        selector: xpath
+        value: //*[@id="image"]
+      status: start
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //a/*[contains(text(),'Recursos')]
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //*[contains(text(), 'Añadir')]
+  
+  - upload_file:
+      selector:
+        type: images
+
+  - end_switch_to_window:
+      status: end

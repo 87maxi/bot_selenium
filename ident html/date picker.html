@@ -1,0 +1,585 @@
+<ul data-role="listview" tabindex="30" role="list" class="ckf-files-view ckf-files-view-borders ui-body-inherit ckf-files-thumbs ui-listview" aria-label="Panel de ficheros" style="min-height: 528px;">
+    <div class="ckf-files-info">
+        <div class="ui-loader ui-loader-verbose ui-content ui-body-a ui-corner-all">
+            <span class="ui-icon-loading"></span>
+            <h1>Por favor espere. Cargando...</h1>
+        </div>
+    </div>
+</ul>
+
+
+
+<label for="publish_date" class="control-label">Fecha y hora de publicación </label>
+<div id="js-datetime-picker" class="input-group date form_datetime col-md-5">
+    <input class="form-control publish_date_humans" size="16" type="text" value="" readonly="">
+    <div class="bootstrap-datetimepicker-widget dropdown-menu usetwentyfour top" style="inset: auto auto 34px 0px;">
+        <ul class="list-unstyled">
+            <li class="collapse in">
+                <div class="datepicker">
+                    <div class="datepicker-days" style="display: block;">
+                        <table class="table-condensed"><thead>
+                        <tr>
+                            <th class="prev disabled" data-action="previous">
+                                            <span class="glyphicon glyphicon-chevron-left" title="Previous Month">
+
+                                            </span>
+                            </th>
+                            <th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Month">
+                                marzo 2022
+                            </th>
+                            <th class="next" data-action="next">
+                                            <span class="glyphicon glyphicon-chevron-right" title="Next Month">
+
+                                            </span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="dow">lu</th>
+                            <th class="dow">ma</th>
+                            <th class="dow">mi</th>
+                            <th class="dow">ju</th>
+                            <th class="dow">vi</th>
+                            <th class="dow">sá</th>
+                            <th class="dow">do</th>
+                        </tr>
+                        </thead>
+                            <tbody>
+                            <tr>
+                                <td data-action="selectDay" data-day="28/02/2022" class="day old disabled">
+                                    28
+                                </td>
+                                <td data-action="selectDay" data-day="01/03/2022" class="day disabled">
+                                    1
+                                </td><td data-action="selectDay" data-day="02/03/2022" class="day disabled">
+                                2</td>
+                                <td data-action="selectDay" data-day="03/03/2022" class="day disabled">
+                                    3
+                                </td>
+                                <td data-action="selectDay" data-day="04/03/2022" class="day disabled">
+                                    4
+                                </td>
+                                <td data-action="selectDay" data-day="05/03/2022" class="day active today weekend">
+                                    5
+                                </td>
+                                <td data-action="selectDay" data-day="06/03/2022" class="day weekend">
+                                    6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectDay" data-day="07/03/2022" class="day">
+                                    7
+                                </td>
+                                <td data-action="selectDay" data-day="08/03/2022" class="day">
+                                    8
+                                </td>
+                                <td data-action="selectDay" data-day="09/03/2022" class="day">
+                                    9
+                                </td>
+                                <td data-action="selectDay" data-day="10/03/2022" class="day">
+                                    10
+                                </td>
+                                <td data-action="selectDay" data-day="11/03/2022" class="day">
+                                    11
+                                </td>
+                                <td data-action="selectDay" data-day="12/03/2022" class="day weekend">
+                                    12
+                                </td>
+                                <td data-action="selectDay" data-day="13/03/2022" class="day weekend">
+                                    13
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectDay" data-day="14/03/2022" class="day">
+                                    14
+                                </td>
+                                <td data-action="selectDay" data-day="15/03/2022" class="day">
+                                    15
+                                </td>
+                                <td data-action="selectDay" data-day="16/03/2022" class="day">
+                                    16
+                                </td>
+                                <td data-action="selectDay" data-day="17/03/2022" class="day">
+                                    17
+                                </td>
+                                <td data-action="selectDay" data-day="18/03/2022" class="day">
+                                    18
+                                </td>
+                                <td data-action="selectDay" data-day="19/03/2022" class="day weekend">
+                                    19
+                                </td>
+                                <td data-action="selectDay" data-day="20/03/2022" class="day weekend">
+                                    20
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectDay" data-day="21/03/2022" class="day">
+                                    21
+                                </td>
+                                <td data-action="selectDay" data-day="22/03/2022" class="day">
+                                    22
+                                </td>
+                                <td data-action="selectDay" data-day="23/03/2022" class="day">
+                                    23
+                                </td>
+                                <td data-action="selectDay" data-day="24/03/2022" class="day">
+                                    24
+                                </td>
+                                <td data-action="selectDay" data-day="25/03/2022" class="day">
+                                    25
+                                </td>
+                                <td data-action="selectDay" data-day="26/03/2022" class="day weekend">
+                                    26
+                                </td>
+                                <td data-action="selectDay" data-day="27/03/2022" class="day weekend">
+                                    27
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectDay" data-day="28/03/2022" class="day">
+                                    28
+                                </td>
+                                <td data-action="selectDay" data-day="29/03/2022" class="day">
+                                    29
+                                </td>
+                                <td data-action="selectDay" data-day="30/03/2022" class="day">
+                                    30
+                                </td>
+                                <td data-action="selectDay" data-day="31/03/2022" class="day">
+                                    31
+                                </td>
+                                <td data-action="selectDay" data-day="01/04/2022" class="day new">
+                                    1
+                                </td><td data-action="selectDay" data-day="02/04/2022" class="day new weekend">
+                                2
+                            </td>
+                                <td data-action="selectDay" data-day="03/04/2022" class="day new weekend">
+                                    3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectDay" data-day="04/04/2022" class="day new">
+                                    4
+                                </td>
+                                <td data-action="selectDay" data-day="05/04/2022" class="day new">
+                                    5
+                                </td>
+                                <td data-action="selectDay" data-day="06/04/2022" class="day new">
+                                    6
+                                </td>
+                                <td data-action="selectDay" data-day="07/04/2022" class="day new">
+                                    7
+                                </td>
+                                <td data-action="selectDay" data-day="08/04/2022" class="day new">
+                                    8
+                                </td>
+                                <td data-action="selectDay" data-day="09/04/2022" class="day new weekend">
+                                    9
+                                </td>
+                                <td data-action="selectDay" data-day="10/04/2022" class="day new weekend">
+                                    10
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="datepicker-months" style="display: none;">
+                        <table class="table-condensed"><thead>
+                        <tr>
+                            <th class="prev disabled" data-action="previous">
+                                        <span class="glyphicon glyphicon-chevron-left" title="Previous Year">
+
+                                        </span>
+                            </th>
+                            <th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Year">
+                                2022
+                            </th>
+                            <th class="next" data-action="next">
+                                        <span class="glyphicon glyphicon-chevron-right" title="Next Year">
+
+                                        </span>
+                            </th>
+                        </tr>
+                        </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="7">
+                                        <span data-action="selectMonth" class="month disabled">
+                                            ene.
+                                        </span>
+                                    <span data-action="selectMonth" class="month disabled">
+                                            feb.
+                                        </span>
+                                    <span data-action="selectMonth" class="month active">
+                                            mar.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            abr.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            may.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            jun.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            jul.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            ago.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            sep.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            oct.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            nov.
+                                        </span>
+                                    <span data-action="selectMonth" class="month">
+                                            dic.
+                                        </span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="datepicker-years" style="display: none;">
+                        <table class="table-condensed">
+                            <thead>
+                            <tr>
+                                <th class="prev disabled" data-action="previous">
+                                        <span class="glyphicon glyphicon-chevron-left" title="Previous Decade">
+
+                                        </span></th><th class="picker-switch" data-action="pickerSwitch" colspan="5" title="Select Decade">
+                                2017-2028
+                            </th>
+                                <th class="next" data-action="next">
+                                            <span class="glyphicon glyphicon-chevron-right" title="Next Decade">
+
+                                            </span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="7"><span data-action="selectYear" class="year disabled">
+                                            2017
+                                        </span>
+                                    <span data-action="selectYear" class="year disabled">
+                                            2018
+                                        </span><span data-action="selectYear" class="year disabled">
+                                            2019
+                                        </span>
+                                    <span data-action="selectYear" class="year disabled">
+                                            2020
+                                        </span>
+                                    <span data-action="selectYear" class="year disabled">
+                                            2021
+                                        </span>
+                                    <span data-action="selectYear" class="year active">
+                                            2022
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2023
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2024
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2025
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2026
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2027
+                                        </span>
+                                    <span data-action="selectYear" class="year">
+                                            2028
+                                        </span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="datepicker-decades" style="display: none;">
+                        <table class="table-condensed">
+                            <thead>
+                            <tr>
+                                <th class="prev disabled" data-action="previous">
+                                        <span class="glyphicon glyphicon-chevron-left" title="Previous Century">
+
+                                        </span>
+                                </th>
+                                <th class="picker-switch" data-action="pickerSwitch" colspan="5">
+                                    2000-2107
+                                </th>
+                                <th class="next" data-action="next">
+                                        <span class="glyphicon glyphicon-chevron-right" title="Next Century">
+
+                                        </span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="7">
+                                        <span data-action="selectDecade" class="decade disabled" data-selection="2005">
+                                            2000 - 2011
+                                        </span>
+                                    <span data-action="selectDecade" class="decade active" data-selection="2017">
+                                            2012 - 2023
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2029">
+                                            2024 - 2035
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2041">
+                                            2036 - 2047
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2053">
+                                            2048 - 2059
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2065">
+                                            2060 - 2071
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2077">
+                                            2072 - 2083
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2089">
+                                            2084 - 2095
+                                        </span>
+                                    <span data-action="selectDecade" class="decade" data-selection="2101">
+                                            2096 - 2107
+                                        </span>
+                                    <span>
+
+                                        </span>
+                                    <span>
+
+                                        </span>
+                                    <span>
+
+                                        </span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li class="picker-switch accordion-toggle">
+                <table class="table-condensed">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <a data-action="togglePicker" title="Select Time">
+                                    <span class="glyphicon glyphicon-time">
+
+                                    </span>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="collapse">
+                <div class="timepicker">
+                    <div class="timepicker-picker">
+                        <table class="table-condensed">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" tabindex="-1" title="Increment Hour" class="btn" data-action="incrementHours">
+                                            <span class="glyphicon glyphicon-chevron-up">
+
+                                            </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" tabindex="-1" title="Increment Second" class="btn" data-action="incrementSeconds">
+                                        <span class="glyphicon glyphicon-chevron-up"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <span class="timepicker-hour" data-time-component="hours" title="Pick Hour" data-action="showHours">
+                                            16
+                                        </span>
+                                </td>
+                                <td>
+                                        <span class="timepicker-second" data-time-component="seconds" title="Pick Second" data-action="showSeconds">
+                                            24
+                                        </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" tabindex="-1" title="Decrement Hour" class="btn" data-action="decrementHours">
+                                            <span class="glyphicon glyphicon-chevron-down">
+
+                                            </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#" tabindex="-1" title="Decrement Second" class="btn" data-action="decrementSeconds">
+                                            <span class="glyphicon glyphicon-chevron-down">
+
+                                            </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="timepicker-hours" style="display: none;">
+                        <table class="table-condensed">
+                            <tbody>
+                            <tr>
+                                <td data-action="selectHour" class="hour disabled">
+                                    00
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    01
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    02
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    03
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectHour" class="hour disabled">
+                                    04
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    05
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    06
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    07
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectHour" class="hour disabled">
+                                    08
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    09
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    10
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    11
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectHour" class="hour disabled">
+                                    12
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    13
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    14
+                                </td>
+                                <td data-action="selectHour" class="hour disabled">
+                                    15
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectHour" class="hour">
+                                    16
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    17
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    18
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    19
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectHour" class="hour">
+                                    20
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    21
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    22
+                                </td>
+                                <td data-action="selectHour" class="hour">
+                                    23
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="timepicker-seconds" style="display: none;">
+                        <table class="table-condensed">
+                            <tbody>
+                            <tr>
+                                <td data-action="selectSecond" class="second disabled">
+                                    00
+                                </td>
+                                <td data-action="selectSecond" class="second disabled">
+                                    05
+                                </td>
+                                <td data-action="selectSecond" class="second disabled">
+                                    10
+                                </td>
+                                <td data-action="selectSecond" class="second disabled">
+                                    15
+                                </td>
+                            </tr>
+                            <tr><td data-action="selectSecond" class="second disabled">
+                                20
+                            </td>
+                                <td data-action="selectSecond" class="second">
+                                    25
+                                </td>
+                                <td data-action="selectSecond" class="second">
+                                    30
+                                </td>
+                                <td data-action="selectSecond" class="second">
+                                    35
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-action="selectSecond" class="second">
+                                    40
+                                </td>
+                                <td data-action="selectSecond" class="second">
+                                    45
+                                </td>
+                                <td data-action="selectSecond" class="second">
+                                    50
+                                </td>
+                                <td data-action="selectSecond" class="second">
+                                    55
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar">
+
+    </span>
+</span>
+</div>
+<div class="help-block with-errors">
+
+</div>
+<input required="" data-required-error="La fecha es un dato obligatorio" name="publish_date" type="hidden" id="publish_date" value="1646507184.039">'

@@ -1,0 +1,146 @@
+
+test:
+#start login
+  - input_text:
+     selector:
+      selector: xpath
+      value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[1]
+     action_type:
+      attr: send_keys
+      value: maparedes@educar.gob.ar
+  
+  - input_text:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[2]
+      action_type:
+        attr: send_keys
+        value: Maxiparedes87.
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[4]/input
+
+#listado de noticias y creacion  
+  - select_click:
+      selector:
+        selector: link_text
+        value: Contenidos
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/header/nav/div/div[2]/ul[1]/li[1]/ul/li[4]/a
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/section[1]/a
+
+  - switch_to_window:
+      selector:
+        selector: xpath
+        value: //*[@id="image"]
+      status: start
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: //a[@class='ckf-folders-tree-label ui-btn ui-btn-active']
+
+  - multi_select:
+      selector:
+        selector: xpath
+        value: //div[@data-ckf-priority='50']
+ 
+  - select_click:
+      selector:
+        selector: xpath
+        value: //button[@class='ckf-toolbar-item ckf-toolbar-button ckf-toolbar-item-focusable ui-btn ui-icon-ckf-choose ui-btn-icon-left ui-corner-all']
+
+  - switch_to_window:
+      status: end
+
+  - switch_to_window:
+      selector:
+        selector: xpath
+        value: //*[@id="js-image-holder"]
+      status: start
+
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/ul/li[3]/a[2]
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/ul/li[3]/div/ul/li[1]/a[1]
+
+  - multi_select:
+      selector:
+        selector: xpath
+        value: //div[@data-ckf-priority='50']
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //button[@class='ckf-toolbar-item ckf-toolbar-button ckf-toolbar-item-focusable ui-btn ui-icon-ckf-choose ui-btn-icon-left ui-corner-all']
+
+  - switch_to_window:
+      status: end
+
+
+  - switch_to_window:
+      selector:
+        selector: xpath
+        value: //*[@id="js-image-holder"]
+      status: start
+
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/ul/li[3]/a[1]
+
+  - multi_select:
+      selector:
+        selector: xpath
+        value: //div[@data-ckf-priority='50']
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //button[@class='ckf-toolbar-item ckf-toolbar-button ckf-toolbar-item-focusable ui-btn ui-icon-ckf-choose ui-btn-icon-left ui-corner-all']
+
+  - switch_to_window:
+      status: end
+
+  - switch_to_window:
+      selector:
+        selector: xpath
+        value: //*[@id="js-image-holder"]
+      status: start
+
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //a/*[contains(text(),'Recursos')]
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //*[contains(text(), 'Añadir')]
+  
+  - upload_file:
+      selector:
+        type: video  
+
+  - switch_to_window:
+      status: end
+
+
+  

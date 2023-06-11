@@ -1,0 +1,13 @@
+env/*
+.idea/*
+geckodriver.log
+*.pyc
+bmp.log
+server.log
+tools/*
+*/*.pyc
+.vscode/*
+venv/*
+pdf_report
+test.db
+tmp/*

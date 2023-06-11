@@ -1,0 +1,91 @@
+url: https://test-backend.educ.ar/login
+
+test:
+#start login
+  - select_click:
+      selector:
+        selector: xpath
+        value: //input[@type='submit']
+
+  - check_validation:
+      selector:
+        selector: xpath
+        value: //div[@role='alert']/div
+      text:
+        description: prueba maximiliano
+        match:
+          - check_text: La contraseña es incorrecta
+          - check_text: El email es obligatorio.
+       
+        
+  - input_text:
+      selector:
+        selector: xpath
+        value: //input[@name='email']
+      action_type:
+        attr: send_keys
+        value: maparedess@educar.gob.ar
+        #clear: true
+      #test: test
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //input[@type='submit']  
+   
+  - check_validation:
+      selector:
+        selector: xpath
+        value: //div[@role='alert']/div
+      text:
+        description: prueba maximiliano 
+        match:
+          - check_text: La contraseña es incorrecta
+
+  - input_text:
+      selector:
+        selector: xpath
+        value: /html/body/div[1]/div/div/div/div/div/div/div[2]/form/div[2]
+      action_type:
+        attr: send_keys
+        value: Maxiparedes87.
+        #clear: true
+      #test: test
+  
+  - select_click:
+      selector:
+        selector: xpath
+        value: //input[@type='submit']
+  
+  - check_validation:
+      selector:
+        selector: xpath
+        value: //div[@role='alert']/div
+      text:
+        description: prueba maximiliano
+        match:
+          - check_text: Estas credenciales no coinciden con nuestros registros.
+
+  - input_text:
+      selector:
+        selector: xpath
+        value: //input[@name='password']
+      action_type:
+        attr: send_keys
+        value: Maxiparedes87.
+
+
+  - input_text:
+      selector:
+        selector: xpath
+        value: //input[@name='email']
+      action_type:
+        clear: true
+        attr: send_keys
+        value: maparedes@educar.gob.ar
+        
+
+  - select_click:
+      selector:
+        selector: xpath
+        value: //input[@type='submit']
